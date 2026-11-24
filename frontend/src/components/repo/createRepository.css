@@ -1,0 +1,240 @@
+.create-repo-page {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 44px 28px 64px;
+  color: #e6edf3;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(56, 139, 253, 0.07), transparent 55%),
+    #0d1117;
+  font-family: var(--sans);
+}
+
+.create-repo-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #30363d;
+}
+
+.create-repo-header h1 {
+  margin: 0 0 10px;
+  color: #f0f6fc;
+  font-family: var(--heading);
+  font-size: 30px;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.7px;
+}
+
+.create-repo-header p {
+  margin: 0;
+  color: #b1bac4;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.create-repo-cancel {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border: 1px solid #30363d;
+  border-radius: 7px;
+  color: #c9d1d9;
+  background: #161b22;
+  font-size: 13px;
+  text-decoration: none;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+
+.create-repo-cancel:hover {
+  border-color: #8b949e;
+  color: #f0f6fc;
+}
+
+.create-repo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  background: #161b22;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.create-repo-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.create-repo-field label,
+.create-repo-visibility legend {
+  color: #f0f6fc;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-repo-field input,
+.create-repo-field textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #484f58;
+  border-radius: 7px;
+  outline: none;
+  background: #0d1117;
+  color: #f0f6fc;
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.create-repo-field input {
+  min-height: 46px;
+}
+
+.create-repo-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-repo-field input::placeholder,
+.create-repo-field textarea::placeholder {
+  color: #8b949e;
+  opacity: 1;
+}
+
+.create-repo-field input:focus,
+.create-repo-field textarea:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.2);
+}
+
+.create-repo-field small {
+  color: #b1bac4;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.create-repo-visibility {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #30363d;
+  border-radius: 9px;
+  background: #0d1117;
+}
+
+.create-repo-visibility legend {
+  padding: 0 8px;
+}
+
+.create-repo-visibility label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.create-repo-visibility label:hover {
+  border-color: #30363d;
+  background: #161b22;
+}
+
+.create-repo-visibility input {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 0;
+  accent-color: #58a6ff;
+}
+
+.create-repo-visibility span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.create-repo-visibility strong {
+  color: #e6edf3;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.create-repo-visibility small {
+  color: #b1bac4;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.create-repo-error {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid rgba(248, 81, 73, 0.45);
+  border-radius: 7px;
+  background: rgba(248, 81, 73, 0.08);
+  color: #ffb4ae;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.create-repo-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 22px;
+  border-top: 1px solid #30363d;
+}
+
+.create-repo-actions button {
+  min-height: 38px;
+  padding: 0 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .create-repo-page {
+    padding: 28px 16px 44px;
+  }
+
+  .create-repo-header {
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .create-repo-header h1 {
+    font-size: 25px;
+  }
+
+  .create-repo-form {
+    gap: 22px;
+    padding: 20px 16px;
+  }
+
+  .create-repo-visibility {
+    padding: 14px;
+  }
+
+  .create-repo-actions button {
+    width: 100%;
+  }
+}
