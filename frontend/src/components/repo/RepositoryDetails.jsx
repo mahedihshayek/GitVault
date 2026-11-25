@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import "./repositoryDetails.css";
 
-const API_URL = "http://3.107.97.4:3002/";
+const API_URL = "https://3.107.97.4:3002/";
 
 function RepositoryDetails() {
   const { id } = useParams();

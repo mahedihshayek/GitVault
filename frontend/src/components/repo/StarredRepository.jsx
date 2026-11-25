@@ -7,7 +7,7 @@ import { BookIcon, RepoIcon } from "@primer/octicons-react";
 import { Star, FolderGit2, LockKeyhole, Eye, ExternalLink } from "lucide-react";
 import "./starredRepository.css";
 
-const API_URL = "http://3.107.97.4:3002/";
+const API_URL = "https://3.107.97.4:3002/";
 
 const StarredRepositories = () => {
   const navigate = useNavigate();
