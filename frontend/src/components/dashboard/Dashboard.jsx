@@ -37,7 +37,7 @@ const Dashboard = () => {
           return;
         }
 
-        const response = await fetch("https://3.107.97.4:3002/repo/all");
+        const response = await fetch("https://d2curktorzax0x.cloudfront.net/repo/all");
 
         if (!response.ok) {
           throw new Error("Failed to fetch repositories");

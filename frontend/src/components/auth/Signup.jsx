@@ -20,7 +20,7 @@ const Signup = () => {
     try {
       setLoading(true);
 
-      const res = await axios.post("https://3.107.97.4:3002/signup", {
+      const res = await axios.post("https://d2curktorzax0x.cloudfront.net/signup", {
         email,
         password,
         username,

@@ -20,7 +20,7 @@ const Login = () => {
     try {
       setLoading(true);
 
-      const res = await axios.post("https://3.107.97.4:3002/login", {
+      const res = await axios.post("https://d2curktorzax0x.cloudfront.net/login", {
         email,
         password,
       });

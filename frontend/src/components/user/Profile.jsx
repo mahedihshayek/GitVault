@@ -20,7 +20,7 @@ const Profile = () => {
       if (userId) {
         try {
           const response = await axios.get(
-            `https://3.107.97.4:3002/userProfile/${userId}`,
+            `https://d2curktorzax0x.cloudfront.net/userProfile/${userId}`,
           );
 
           setUserDetails(response.data);

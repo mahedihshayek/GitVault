@@ -27,7 +27,7 @@ const CreateRepository = () => {
       setLoading(true);
       setError("");
 
-      await axios.post("https://3.107.97.4:3002/repo/create", {
+      await axios.post("https://d2curktorzax0x.cloudfront.net/repo/create", {
         owner,
         name: name.trim(),
         description: description.trim(),
