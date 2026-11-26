@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import "./repositoryDetails.css";
 
-const API_URL = "https://d2curktorzax0x.cloudfront.net/";
+const API_URL = "https://d2curktorzax0x.cloudfront.net";
 
 function RepositoryDetails() {
   const { id } = useParams();

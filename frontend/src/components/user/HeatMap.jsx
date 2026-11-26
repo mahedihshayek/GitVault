@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import HeatMap from "@uiw/react-heat-map";
 
-const API_URL = "https://d2curktorzax0x.cloudfront.net/";
+const API_URL = "https://d2curktorzax0x.cloudfront.net";
 
 const toLocalDateString = (date) => {
   const year = date.getFullYear();
